@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.cell {
+    position: relative;
+}
+.cwiczenia,
+.komputerowe,
+.wyklad,
+.laby {
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    left: 50%;
+    top: -50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    white-space: nowrap;
+    padding: 10px 15px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.cell:hover .tooltip {
+    top: -40px;
+    visibility: visible;
+    opacity: 1;
+}
