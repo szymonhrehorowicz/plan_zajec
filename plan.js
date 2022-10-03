@@ -28,8 +28,8 @@ let plan_parzysty = [
     ],
     [
         // WTOREK
-        ['TKszWyr W', 'C04', 'wyklad', 'x'],
-        ['TKszWyr W', 'C04', 'wyklad', 'x'],
+        ['', '', '', ''],
+        ['', '', '', ''],
         ['PAutRob L', 'E07/C/2', 'laby', 'mgr inż. Jarosław Zych'],
         ['PAutRob L', 'E07/C/2', 'laby', 'mgr inż. Jarosław Zych'],
         ['TKszWyr L', 'E12a', 'laby', 'dr inż. Dominik Wyszyński'],
@@ -97,8 +97,8 @@ let plan_parzysty = [
         ['', '', '', ''],
         ['MaszTMiM W', 'zdalnie', 'wyklad', 'x'],
         ['MaszTMiM W', 'zdalnie', 'wyklad', 'x'],
-        ['', '', '', ''],
-        ['', '', '', ''],
+        ['TKszWyr W', 'C04', 'wyklad', 'x'],
+        ['TKszWyr W', 'C04', 'wyklad', 'x'],
         ['', '', '', ''],
         ['', '', '', ''],
     ],
@@ -126,8 +126,8 @@ let plan_nieparzysty = [
     ],
     [
         // WTOREK
-        ['TKszWyr W', 'C04', 'wyklad', 'x'],
-        ['TKszWyr W', 'C04', 'wyklad', 'x'],
+        ['', '', '', ''],
+        ['', '', '', ''],
         ['DUkłMech L', 'B204', 'laby', 'dr inż. Janusz Tarnowski'],
         ['DUkłMech L', 'B204', 'laby', 'dr inż. Janusz Tarnowski'],
         ['', '', '', ''],
@@ -195,8 +195,8 @@ let plan_nieparzysty = [
         ['', '', '', ''],
         ['PAutRob W', 'zdalnie', 'wyklad', 'x'],
         ['PAutRob W', 'zdalnie', 'wyklad', 'x'],
-        ['', '', '', ''],
-        ['', '', '', ''],
+        ['TKszWyr W', 'C04', 'wyklad', 'x'],
+        ['TKszWyr W', 'C04', 'wyklad', 'x'],
         ['', '', '', ''],
         ['', '', '', ''],
     ],

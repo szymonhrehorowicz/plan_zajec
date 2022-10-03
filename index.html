@@ -5,27 +5,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Plan Zajęć - 12A1 L02 K04</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div>
+        <div id="button_box">
             Tydzień:
             <button id="change_week">parzysty</button>
         </div>
         <table>
-            <th>Plan zajęć</th>
+            <th colspan="7">Plan zajęć</th>
             <tr>
-                <td class="cell">Nr</td>
-                <td class="cell">Godz</td>
-                <td class="cell">Poniedziałek</td>
-                <td class="cell">Wtorek</td>
-                <td class="cell">Środa</td>
-                <td class="cell">Czwartek</td>
-                <td class="cell">Piątek</td>
+                <td class="cell_desc">Nr</td>
+                <td class="cell_desc">Godz</td>
+                <td class="cell_desc">Poniedziałek</td>
+                <td class="cell_desc">Wtorek</td>
+                <td class="cell_desc">Środa</td>
+                <td class="cell_desc">Czwartek</td>
+                <td class="cell_desc">Piątek</td>
             </tr>
             <tr>
-                <td class="cell">1</td>
-                <td class="cell">7:30 - 8:15</td>
+                <td class="cell_desc">1</td>
+                <td class="cell_desc">7:30 - 8:15</td>
                 <td class="cell" id="0_0"></td>
                 <td class="cell" id="0_1"></td>
                 <td class="cell" id="0_2"></td>
@@ -33,8 +36,8 @@
                 <td class="cell" id="0_4"></td>
             </tr>
             <tr>
-                <td class="cell">2</td>
-                <td class="cell">8:15 - 9:00</td>
+                <td class="cell_desc">2</td>
+                <td class="cell_desc">8:15 - 9:00</td>
                 <td class="cell" id="1_0"></td>
                 <td class="cell" id="1_1"></td>
                 <td class="cell" id="1_2"></td>
@@ -42,8 +45,8 @@
                 <td class="cell" id="1_4"></td>
             </tr>
             <tr>
-                <td class="cell">3</td>
-                <td class="cell">9:15 - 10:00</td>
+                <td class="cell_desc">3</td>
+                <td class="cell_desc">9:15 - 10:00</td>
                 <td class="cell" id="2_0"></td>
                 <td class="cell" id="2_1"></td>
                 <td class="cell" id="2_2"></td>
@@ -51,8 +54,8 @@
                 <td class="cell" id="2_4"></td>
             </tr>
             <tr>
-                <td class="cell">4</td>
-                <td class="cell">10:00 - 10:45</td>
+                <td class="cell_desc">4</td>
+                <td class="cell_desc">10:00 - 10:45</td>
                 <td class="cell" id="3_0"></td>
                 <td class="cell" id="3_1"></td>
                 <td class="cell" id="3_2"></td>
@@ -60,8 +63,8 @@
                 <td class="cell" id="3_4"></td>
             </tr>
             <tr>
-                <td class="cell">5</td>
-                <td class="cell">11:00 - 11:45</td>
+                <td class="cell_desc">5</td>
+                <td class="cell_desc">11:00 - 11:45</td>
                 <td class="cell" id="4_0"></td>
                 <td class="cell" id="4_1"></td>
                 <td class="cell" id="4_2"></td>
@@ -69,8 +72,8 @@
                 <td class="cell" id="4_4"></td>
             </tr>
             <tr>
-                <td class="cell">6</td>
-                <td class="cell">11:45 - 12:30</td>
+                <td class="cell_desc">6</td>
+                <td class="cell_desc">11:45 - 12:30</td>
                 <td class="cell" id="5_0"></td>
                 <td class="cell" id="5_1"></td>
                 <td class="cell" id="5_2"></td>
@@ -78,8 +81,8 @@
                 <td class="cell" id="5_4"></td>
             </tr>
             <tr>
-                <td class="cell">7</td>
-                <td class="cell">12:45 - 13:30</td>
+                <td class="cell_desc">7</td>
+                <td class="cell_desc">12:45 - 13:30</td>
                 <td class="cell" id="6_0"></td>
                 <td class="cell" id="6_1"></td>
                 <td class="cell" id="6_2"></td>
@@ -87,8 +90,8 @@
                 <td class="cell" id="6_4"></td>
             </tr>
             <tr>
-                <td class="cell">8</td>
-                <td class="cell">13:30 - 14:15</td>
+                <td class="cell_desc">8</td>
+                <td class="cell_desc">13:30 - 14:15</td>
                 <td class="cell" id="7_0"></td>
                 <td class="cell" id="7_1"></td>
                 <td class="cell" id="7_2"></td>
@@ -96,8 +99,8 @@
                 <td class="cell" id="7_4"></td>
             </tr>
             <tr>
-                <td class="cell">9</td>
-                <td class="cell">14:30 - 15:15</td>
+                <td class="cell_desc">9</td>
+                <td class="cell_desc">14:30 - 15:15</td>
                 <td class="cell" id="8_0"></td>
                 <td class="cell" id="8_1"></td>
                 <td class="cell" id="8_2"></td>
@@ -105,8 +108,8 @@
                 <td class="cell" id="8_4"></td>
             </tr>
             <tr>
-                <td class="cell">10</td>
-                <td class="cell">15:15 - 16:00</td>
+                <td class="cell_desc">10</td>
+                <td class="cell_desc">15:15 - 16:00</td>
                 <td class="cell" id="9_0"></td>
                 <td class="cell" id="9_1"></td>
                 <td class="cell" id="9_2"></td>
@@ -114,8 +117,8 @@
                 <td class="cell" id="9_4"></td>
             </tr>
             <tr>
-                <td class="cell">11</td>
-                <td class="cell">16:15 - 17:00</td>
+                <td class="cell_desc">11</td>
+                <td class="cell_desc">16:15 - 17:00</td>
                 <td class="cell" id="10_0"></td>
                 <td class="cell" id="10_1"></td>
                 <td class="cell" id="10_2"></td>
@@ -123,8 +126,8 @@
                 <td class="cell" id="10_4"></td>
             </tr>
             <tr>
-                <td class="cell">12</td>
-                <td class="cell">17:00 - 17:45</td>
+                <td class="cell_desc">12</td>
+                <td class="cell_desc">17:00 - 17:45</td>
                 <td class="cell" id="11_0"></td>
                 <td class="cell" id="11_1"></td>
                 <td class="cell" id="11_2"></td>
@@ -132,8 +135,8 @@
                 <td class="cell" id="11_4"></td>
             </tr>
             <tr>
-                <td class="cell">13</td>
-                <td class="cell">18:00 - 18:45</td>
+                <td class="cell_desc">13</td>
+                <td class="cell_desc">18:00 - 18:45</td>
                 <td class="cell" id="12_0"></td>
                 <td class="cell" id="12_1"></td>
                 <td class="cell" id="12_2"></td>
@@ -141,8 +144,8 @@
                 <td class="cell" id="12_4"></td>
             </tr>
             <tr>
-                <td class="cell">14</td>
-                <td class="cell">18:45 - 19:30</td>
+                <td class="cell_desc">14</td>
+                <td class="cell_desc">18:45 - 19:30</td>
                 <td class="cell" id="13_0"></td>
                 <td class="cell" id="13_1"></td>
                 <td class="cell" id="13_2"></td>
@@ -150,8 +153,8 @@
                 <td class="cell" id="13_4"></td>
             </tr>
             <tr>
-                <td class="cell">15</td>
-                <td class="cell">19:45 - 20:30</td>
+                <td class="cell_desc">15</td>
+                <td class="cell_desc">19:45 - 20:30</td>
                 <td class="cell" id="14_0"></td>
                 <td class="cell" id="14_1"></td>
                 <td class="cell" id="14_2"></td>
@@ -159,8 +162,8 @@
                 <td class="cell" id="14_4"></td>
             </tr>
             <tr>
-                <td class="cell">16</td>
-                <td class="cell">20:30 - 21:15</td>
+                <td class="cell_desc">16</td>
+                <td class="cell_desc">20:30 - 21:15</td>
                 <td class="cell" id="15_0"></td>
                 <td class="cell" id="15_1"></td>
                 <td class="cell" id="15_2"></td>
@@ -168,7 +171,7 @@
                 <td class="cell" id="15_4"></td>
             </tr>
         </table>
-
+        <p>Ostatnia aktualizacja: 03-10-2022</p>
         <script src="./plan.js"></script>
         <script src="./script.js"></script>
     </body>

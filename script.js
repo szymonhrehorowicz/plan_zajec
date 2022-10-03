@@ -12,7 +12,7 @@ let print_table = (week_type) => {
             let cell = document.getElementById(`${i}_${j}`);
             cell.innerHTML = plan[j][i][0];
             cell.dataset.place = plan[j][i][1];
-            cell.className += ' ' + plan[j][i][2];
+            cell.className = 'cell ' + plan[j][i][2];
             cell.dataset.leader = plan[j][i][3];
             button.innerHTML = week_type[1];
             if (plan[j][i][0] !== '') {
