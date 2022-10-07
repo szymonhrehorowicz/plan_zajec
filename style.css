@@ -52,7 +52,8 @@ body {
 .cwiczenia,
 .komputerowe,
 .wyklad,
-.laby {
+.laby,
+.angielski {
     cursor: pointer;
 }
 
@@ -77,7 +78,15 @@ body {
     opacity: 1;
 }
 
-.cell:hover {
+.icon_img {
+    height: 20px;
+}
+
+.cwiczenia:hover,
+.komputerowe:hover,
+.wyklad:hover,
+.laby:hover,
+.angielski:hover {
     background-color: #60bf81;
 }
 

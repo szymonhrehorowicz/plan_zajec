@@ -17,9 +17,14 @@ let print_table = (week_type) => {
             button.innerHTML = week_type[1];
             if (plan[j][i][0] !== '') {
                 let tooltip = document.createElement('span');
+                let sala = cell.dataset.place;
+                let places = ['zoom', 'delta', 'teams'];
+                if (places.includes(sala)) {
+                    sala = `<a href="${plan[j][i][4]}" target="_blank"><img class="icon_img" src="./media/${cell.dataset.place}.png" alt="${cell.dataset.place}"/></a>`;
+                }
                 tooltip.id = `tooltip_${i}_${j}`;
                 tooltip.className = 'tooltip';
-                tooltip.innerHTML = `Sala: ${(cell.dataset.place = plan[j][i][1])} Prowadzący: ${(cell.dataset.leader = plan[j][i][3])}`;
+                tooltip.innerHTML = `Sala: ${sala} Prowadzący: ${cell.dataset.leader}`;
                 cell.insertAdjacentElement('afterbegin', tooltip);
             }
         }
