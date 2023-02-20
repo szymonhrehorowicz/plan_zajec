@@ -86,7 +86,8 @@ body {
 .komputerowe:hover,
 .wyklad:hover,
 .laby:hover,
-.angielski:hover {
+.angielski:hover,
+.projekt:hover {
     background-color: #60bf81;
 }
 
@@ -127,6 +128,9 @@ td {
 }
 .cwiczenia {
     background-color: #c2bb00;
+}
+.projekt {
+    background-color: #236d3d;
 }
 .angielski {
     background-color: #ee101b;
