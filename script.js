@@ -4,9 +4,9 @@ let start_date = new Date('October 3, 2022 00:00:00');
 let ms_in_week = 604800000;
 
 if (Math.floor((Date.now() - start_date.valueOf()) / ms_in_week) % 2 == 0) {
-    week_type = [0, 'nieparzysty'];
-} else {
     week_type = [1, 'parzysty'];
+} else {
+    week_type = [0, 'nieparzysty'];
 }
 
 document.getElementById('week_type').textContent = week_type[1];
