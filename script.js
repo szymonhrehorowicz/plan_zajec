@@ -1,12 +1,12 @@
 let week_type = [0, 'nieparzysty'];
 
-let start_date = new Date('October 3, 2022 00:00:00');
+let start_date = new Date('October 2, 2023 00:00:00');
 let ms_in_week = 604800000;
 
-if (Math.floor((Date.now() - start_date.valueOf()) / ms_in_week) % 2 == 0) {
-    week_type = [1, 'parzysty'];
+if (Math.floor(((Date.now()) - start_date.valueOf()) / ms_in_week) % 2 == 0) {
+    week_type = [1, 'nieparzysty'];
 } else {
-    week_type = [0, 'nieparzysty'];
+    week_type = [0, 'parzysty'];
 }
 
 document.getElementById('week_type').textContent = week_type[1];
@@ -18,7 +18,7 @@ button.addEventListener('click', () => {
 });
 
 let print_table = (week_type) => {
-    let plan = week_type[0] == 0 ? plan_nieparzysty : plan_parzysty;
+    let plan = week_type[0] == 0 ? plan_parzysty: plan_nieparzysty;
     for (let j = 0; j < 5; j++) {
         for (let i = 0; i < 16; i++) {
             let cell = document.getElementById(`${i}_${j}`);
