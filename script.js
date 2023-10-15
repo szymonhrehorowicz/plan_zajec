@@ -13,7 +13,7 @@ document.getElementById('week_type').textContent = week_type[1];
 
 let button = document.getElementById('change_week');
 button.addEventListener('click', () => {
-    week_type[0] == 0 ? (week_type = [1, 'parzysty']) : (week_type = [0, 'nieparzysty']);
+    week_type[0] == 0 ? (week_type = [1, 'nieparzysty']) : (week_type = [0, 'parzysty']);
     print_table(week_type);
 });
 
